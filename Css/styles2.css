@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 100vh;
+    width: auto;
+}
+.circulo{
+    display: relative;
+    background: gray;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.circulo::before {
+    content: "";
+    display: absolute;
+    border: 15px solid white;
+    background:white;
+    height: 15px;
+    width: 40%;
+}
